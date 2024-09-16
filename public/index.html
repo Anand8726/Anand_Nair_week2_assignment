@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Blog Platform</title>
+</head>
+<body>
+  <div class="container">
+    <h1>This is a Basic Blog Platform</h1>
+    <div id="posts"></div>
+    <form id="postForm">
+      <input type="text" id="title" placeholder="TITLE " required><br><br>
+      <textarea id="content" placeholder="CONTENT" required></textarea><br><br>
+      <button type="submit">Add Your Post</button>
+    </form>
+    <form id="editForm" style="display: none;">
+      <input type="hidden" id="editId">
+      <input type="text" id="editTitle" placeholder="Title" required>
+      <textarea id="editContent" placeholder="Content" required></textarea>
+      <button type="submit">Update Post</button>
+      <button type="button" onclick="cancelEdit()">Cancel</button>
+    </form>
+  </div>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
